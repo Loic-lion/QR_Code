@@ -7,9 +7,10 @@ body {
   background-color: hsl(212, 45%, 89%);
   display: flex;
   font-family: outfit;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+
 }
 .card {
   display: flex;
@@ -26,6 +27,11 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.card_vide {
+  width: 200px;
+  height: 50px;
 }
 .qr_code {
   display: flex;
@@ -45,5 +51,11 @@ p {
   font-size: 15px;
   text-align: center;
 }
+/* fin du projet entre loic et louka 1er étape*/
 
-/* fin du projet entre loic et louka */
+@media screen and (max-width: 375px) {
+  body {
+    flex-direction: column;
+
+  }
+}
